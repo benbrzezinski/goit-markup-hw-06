@@ -56,7 +56,6 @@ h1 {
   background-color: var(--main-selection-color);
   cursor: pointer;
   color: var(--main-background-color);
-  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -296,7 +295,6 @@ h1 {
 .buttons button {
   color: var(--main-text-color);
   background-color: var(--secondary-background-color);
-  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
@@ -552,7 +550,7 @@ footer {
 .all-footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  justify-content: space-between;
 }
 
 .logo-footer {
@@ -579,7 +577,7 @@ address {
 }
 
 .logo-address-footer {
-  margin-left: 15px;
+  padding-left: 15px;
 }
 
 .contacts-footer a {
@@ -644,6 +642,62 @@ address {
 
 .icons-footer {
   fill: var(--main-background-color);
+}
+
+.newsletter {
+  padding-top: 11px;
+  padding-right: 15px;
+}
+
+.newsletter > p {
+  color: var(--main-background-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.newsletter input {
+  color: var(--main-background-color);
+  background-color: #2f303a;
+  width: 358px;
+  padding-block: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  margin-right: 8px;
+}
+
+.newsletter input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.newsletter > button {
+  padding: 10px 76px 10px 42px;
+  color: var(--main-background-color);
+  background-color: var(--main-selection-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  position: relative;
+}
+
+.icon-send {
+  --icon-send: currentColor;
+  position: absolute;
+  top: 13px;
+  right: 28px;
 }
 
 /* --------------------MODAL WINDOW-------------------- */
