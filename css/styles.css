@@ -746,3 +746,47 @@ address {
   justify-content: center;
   align-items: center;
 }
+
+.modal-form {
+  padding: 40px;
+}
+
+.modal-header {
+  color: var(--main-text-color);
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.modal-form label {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.modal-form p {
+  color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal-form input {
+  padding-block: 10px;
+  padding-left: 41px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.icons-modal-form {
+  fill: var(--main-text-color);
+  position: absolute;
+  left: 15px;
+  bottom: 14px;
+}

@@ -531,7 +531,7 @@
             class="newsletter"
             name="newsletter_form"
             autocomplete="on"
-            method="POST"
+            method="post"
           >
             <p>Zapisz się do newslettera</p>
             <label>
@@ -554,6 +554,21 @@
             <use xlink:href="./images/icons.svg#icon-close-modal-x"></use>
           </svg>
         </button>
+        <form
+          class="modal-form"
+          name="modal_form"
+          autocomplete="on"
+          method="post"
+        >
+          <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
+          <label>
+            <p>Imię</p>
+            <svg class="icons-modal-form icon-person" width="12" height="12">
+              <use xlink:href="./images/icons.svg#icon-person"></use>
+            </svg>
+            <input type="text" name="username" required />
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
