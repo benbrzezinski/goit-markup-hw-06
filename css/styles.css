@@ -339,10 +339,6 @@ h1 {
   letter-spacing: 0.03em;
 }
 
-.projects-div figure {
-  border: 1px solid #eee;
-}
-
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -359,7 +355,7 @@ h1 {
 
 .projects-list p {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .projects-list figure {
@@ -375,7 +371,15 @@ h1 {
 }
 
 .projects-list figcaption {
-  padding-left: 24px;
+  padding-left: 23px;
+}
+
+.border-below-img {
+  padding-top: 20px;
+  padding-bottom: 19px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .projects-item:hover .projects-overlay,
@@ -386,7 +390,6 @@ h1 {
 .projects-box {
   width: 370px;
   height: 294px;
-  margin-bottom: 20px;
   position: relative;
   overflow: hidden;
 }
