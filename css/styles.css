@@ -790,6 +790,6 @@ address {
 .icons-modal-form {
   fill: var(--main-text-color);
   position: absolute;
-  left: 15px;
-  bottom: 14px;
+  left: 12px;
+  bottom: 11px;
 }
