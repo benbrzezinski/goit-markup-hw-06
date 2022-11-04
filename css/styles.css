@@ -833,7 +833,7 @@ p.acceptance-links {
   pointer-events: auto;
 }
 
-label.acceptance-label::before {
+.acceptance-label::before {
   content: "";
   width: 16px;
   height: 15px;
@@ -843,14 +843,15 @@ label.acceptance-label::before {
   margin-left: 15px;
   cursor: pointer;
   pointer-events: auto;
+  transition: background-color 75ms ease-in, border 25ms linear;
 }
 
-input.checkbox:checked + label.acceptance-label::before {
+.checkbox:checked + .acceptance-label::before {
   background-color: var(--main-selection-color);
   border: none;
 }
 
-input.checkbox:checked + label.acceptance-label .icon-check-mark {
+.checkbox:checked + .acceptance-label .icon-check-mark {
   opacity: 1;
 }
 
@@ -861,4 +862,5 @@ input.checkbox:checked + label.acceptance-label .icon-check-mark {
   top: 7px;
   left: 18px;
   cursor: pointer;
+  transition: opacity 75ms ease-in;
 }
