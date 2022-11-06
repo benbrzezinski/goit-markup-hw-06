@@ -561,36 +561,48 @@
           method="post"
         >
           <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
-          <label for="username">
-            <p>Imię</p>
-            <svg
-              class="icons-modal-form icon-person-black"
-              width="18"
-              height="18"
-            >
-              <use xlink:href="./images/icons.svg#icon-person-black"></use></svg
-          ></label>
-          <input type="text" name="username" id="username" required />
-          <label for="tel">
-            <p>Telefon</p>
-            <svg
-              class="icons-modal-form icon-phone-black"
-              width="18"
-              height="18"
-            >
-              <use xlink:href="./images/icons.svg#icon-phone-black"></use></svg
-          ></label>
-          <input type="tel" name="phone_number" id="tel" required />
-          <label for="email">
-            <p>Email</p>
-            <svg
-              class="icons-modal-form icon-email-black"
-              width="18"
-              height="18"
-            >
-              <use xlink:href="./images/icons.svg#icon-email-black"></use></svg
-          ></label>
-          <input type="email" name="email" id="email" required />
+          <div class="formal-div-one">
+            <label for="username">
+              <p>Imię</p>
+              <svg
+                class="icons-modal-form icon-person-black"
+                width="18"
+                height="18"
+              >
+                <use
+                  xlink:href="./images/icons.svg#icon-person-black"
+                ></use></svg
+            ></label>
+            <input type="text" name="username" id="username" required />
+          </div>
+          <div class="formal-div-two">
+            <label for="tel">
+              <p>Telefon</p>
+              <svg
+                class="icons-modal-form icon-phone-black"
+                width="18"
+                height="18"
+              >
+                <use
+                  xlink:href="./images/icons.svg#icon-phone-black"
+                ></use></svg
+            ></label>
+            <input type="tel" name="phone_number" id="tel" required />
+          </div>
+          <div class="formal-div-three">
+            <label for="email">
+              <p>Email</p>
+              <svg
+                class="icons-modal-form icon-email-black"
+                width="18"
+                height="18"
+              >
+                <use
+                  xlink:href="./images/icons.svg#icon-email-black"
+                ></use></svg
+            ></label>
+            <input type="email" name="email" id="email" required />
+          </div>
           <label for="comment-area"><p>Komentarz</p></label>
           <textarea
             class="comment"
@@ -603,7 +615,7 @@
           <input
             class="checkbox"
             type="checkbox"
-            name="acceptance"
+            name="acceptance-checkbox"
             id="acceptance-checkbox"
             value="acceptance of the regulations and privacy policy"
             required
@@ -617,6 +629,9 @@
               <a href="#">Politykę Prywatności.</a>
             </p></label
           >
+          <div class="submit-btn-div">
+            <button type="submit">Wyślij</button>
+          </div>
         </form>
       </div>
     </div>
