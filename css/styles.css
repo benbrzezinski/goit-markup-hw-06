@@ -742,11 +742,11 @@ address {
   align-items: center;
 }
 
-.modal-form {
+.form {
   padding: 40px;
 }
 
-.modal-header {
+.form-header {
   color: var(--main-text-color);
   margin: 0;
   font-size: 20px;
@@ -755,7 +755,7 @@ address {
   margin-bottom: 12px;
 }
 
-.modal-form label {
+.form label {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -763,7 +763,7 @@ address {
   pointer-events: none;
 }
 
-.modal-form p {
+.form p {
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 4px;
@@ -772,7 +772,7 @@ address {
   letter-spacing: 0.01em;
 }
 
-.modal-form input {
+.form input {
   width: 100%;
   padding-block: 10px;
   padding-left: 41px;
@@ -783,11 +783,11 @@ address {
   transition: border-color var(--transition-duration) var(--cubic-bezier);
 }
 
-.modal-form input:focus {
+.form input:focus {
   border-color: var(--main-selection-color);
 }
 
-.icons-modal-form {
+.icons-form {
   fill: var(--main-text-color);
   position: absolute;
   top: 29px;
@@ -795,9 +795,9 @@ address {
   transition: fill var(--transition-duration) var(--cubic-bezier);
 }
 
-.formal-div-one:focus-within .icons-modal-form,
-.formal-div-two:focus-within .icons-modal-form,
-.formal-div-three:focus-within .icons-modal-form {
+.form-div-one:focus-within .icons-form,
+.form-div-two:focus-within .icons-form,
+.form-div-three:focus-within .icons-form {
   fill: var(--main-selection-color);
 }
 
@@ -828,7 +828,7 @@ input.checkbox {
   display: none;
 }
 
-p.acceptance-links {
+p.checkbox-links {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -836,17 +836,17 @@ p.acceptance-links {
   margin-bottom: 0;
 }
 
-.acceptance-links a {
+.checkbox-links a {
   color: var(--main-selection-color);
   cursor: pointer;
   pointer-events: auto;
 }
 
-.acceptance-label {
+.checkbox-label {
   margin-bottom: 30px;
 }
 
-.acceptance-label::before {
+.checkbox-label::before {
   content: "";
   width: 16px;
   height: 15px;
@@ -859,12 +859,12 @@ p.acceptance-links {
   transition: background-color 75ms ease-in, border 25ms linear;
 }
 
-.checkbox:checked + .acceptance-label::before {
+.checkbox:checked + .checkbox-label::before {
   background-color: var(--main-selection-color);
   border: none;
 }
 
-.checkbox:checked + .acceptance-label .icon-check-mark {
+.checkbox:checked + .checkbox-label .icon-check-mark {
   opacity: 1;
 }
 
