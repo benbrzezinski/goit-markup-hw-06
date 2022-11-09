@@ -28,6 +28,18 @@ ul {
   padding: 0;
 }
 
+.button {
+  background-color: var(--main-selection-color);
+  color: var(--main-background-color);
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
 /* --------------------INDEX SITE-------------------- */
 
 .h1-div {
@@ -54,26 +66,13 @@ h1 {
   margin: 0 250px;
 }
 
-.h1-div button {
-  background-color: var(--main-selection-color);
-  cursor: pointer;
-  color: var(--main-background-color);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-}
-
-.button-h1 {
+.h1-button {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
-.button-h1 button {
+.h1-button button {
   padding: 10px 41px 10px 42px;
 }
 
@@ -376,7 +375,7 @@ h1 {
   padding-left: 23px;
 }
 
-.border-below-img {
+.projects-border-below-img {
   padding-top: 20px;
   padding-bottom: 19px;
   border-left: 1px solid #eee;
@@ -686,15 +685,6 @@ address {
 
 .newsletter > button {
   padding: 10px 76px 10px 42px;
-  color: var(--main-background-color);
-  background-color: var(--main-selection-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   position: relative;
 }
 
@@ -894,14 +884,5 @@ p.acceptance-links {
 }
 
 .submit-btn-div button {
-  color: var(--main-background-color);
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  background-color: var(--main-selection-color);
   padding: 10px 76px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
 }
